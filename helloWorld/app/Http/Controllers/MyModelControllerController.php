@@ -24,7 +24,7 @@ class MyModelControllerController extends Controller
      */
     public function create()
     {
-        //
+        return 'this is the create page';
     }
 
     /**
@@ -46,7 +46,7 @@ class MyModelControllerController extends Controller
      */
     public function show(MyModelController $myModelController)
     {
-        //
+        return 'this is the show page';
     }
 
     /**
