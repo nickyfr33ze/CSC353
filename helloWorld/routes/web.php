@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\MyModelController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,7 +18,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('/mymodel', MyModelControllerController::class);
+Route::resource('/mymodel', MyModelController::class);
+Route::resource('/create' , MyModelController::class);
+Route::resource('/edit' , MyModelController::class);
 
 
 
