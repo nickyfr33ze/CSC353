@@ -1,3 +1,4 @@
+<a href="/talk/create">Add new talk</a>
 <ul>
     @foreach($talk as $talk)
     <li>
