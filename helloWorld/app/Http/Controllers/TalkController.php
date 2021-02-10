@@ -80,6 +80,7 @@ class TalkController extends Controller
      */
     public function destroy(Talk $talk)
     {
-        //
+        $talk->delete();
+        redirect('/talk/');
     }
 }
