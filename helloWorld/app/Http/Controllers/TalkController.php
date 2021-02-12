@@ -14,7 +14,8 @@ class TalkController extends Controller
      */
     public function index()
     {
-        //
+        $talks = Talk::all();
+        return view('talk.index', compact('talks'));
     }
 
     /**
@@ -24,7 +25,7 @@ class TalkController extends Controller
      */
     public function create()
     {
-        //
+        return view('talk.create');
     }
 
     /**
@@ -35,7 +36,10 @@ class TalkController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Talk::create([
+            'title' => $request->title,
+            'description' => $request->description,
+        ]);
     }
 
     /**
@@ -46,7 +50,7 @@ class TalkController extends Controller
      */
     public function show(Talk $talk)
     {
-        //
+        return view('talk.show', compact('talk'));
     }
 
     /**
@@ -57,7 +61,7 @@ class TalkController extends Controller
      */
     public function edit(Talk $talk)
     {
-        //
+        return view('talk.edit', compact('talk'));
     }
 
     /**
@@ -69,7 +73,10 @@ class TalkController extends Controller
      */
     public function update(Request $request, Talk $talk)
     {
-        //
+        $talk->title = $request->title;
+        $talk->description = $request->description;
+        $talk->save();
+        redirect('/talk/'.$talk->id);
     }
 
     /**
