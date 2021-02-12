@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\TalkController;
 use App\Models\MyModelController;
 use Illuminate\Support\Facades\Route;
 
@@ -21,6 +22,7 @@ Route::get('/', function () {
 Route::resource('/mymodel', MyModelController::class);
 Route::resource('/create' , MyModelController::class);
 Route::resource('/edit' , MyModelController::class);
+Route::resource('/talk', TalkController::class);
 
 
 

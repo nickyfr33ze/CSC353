@@ -36,6 +36,14 @@ class TalkController extends Controller
      */
     public function store(Request $request)
     {
+        $validated = $request->validate([
+            'title' => 'required|max:255',
+            'description' => 'required',
+        ]);
+
+        dd('here'); // This stops code execution at this point
+        // can also do this 'Talk::create($validated);
+        
         Talk::create([
             'title' => $request->title,
             'description' => $request->description,
@@ -73,6 +81,11 @@ class TalkController extends Controller
      */
     public function update(Request $request, Talk $talk)
     {
+        $request->validate([
+            'title' => 'required|max:2',
+            'description' => 'required',
+        ]);
+
         $talk->title = $request->title;
         $talk->description = $request->description;
         $talk->save();

@@ -1,6 +1,6 @@
 <a href="/talk/create">Add new talk</a>
 <ul>
-    @foreach($talk as $talk)
+    @foreach($talks as $talk)
     <li>
         <a href="/talk/{{ $talk->id }}/edit">{{ $talk->$talk }}"</a>
         <form method="post" action="/talk/{{ $talk->id }}">
