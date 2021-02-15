@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\TalkRequest;
 use App\Models\Talk;
 use Illuminate\Http\Request;
 
@@ -34,20 +35,11 @@ class TalkController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(TalkRequest $request)
     {
-        $validated = $request->validate([
-            'title' => 'required|max:255',
-            'description' => 'required',
-        ]);
+        Talk::create($request);
 
-        dd('here'); // This stops code execution at this point
-        // can also do this 'Talk::create($validated);
-        
-        Talk::create([
-            'title' => $request->title,
-            'description' => $request->description,
-        ]);
+        return redirect('/talk/');
     }
 
     /**
@@ -79,17 +71,12 @@ class TalkController extends Controller
      * @param  \App\Models\Talk  $talk
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Talk $talk)
+    public function update(TalkRequest $request, Talk $talk)
     {
-        $request->validate([
-            'title' => 'required|max:2',
-            'description' => 'required',
-        ]);
-
-        $talk->title = $request->title;
-        $talk->description = $request->description;
-        $talk->save();
+        $talk->update($request->all());
+        
         redirect('/talk/'.$talk->id);
+        
     }
 
     /**
