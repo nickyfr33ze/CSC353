@@ -3,5 +3,17 @@
 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
 <html style="background-color: darkolivegreen">
-
+    <body>
+        <div class="text-3xl text-black font-mono">
+            Welcome to Nick's web page
+            <br>
+            <h1>
+                Please click one of the following links to explore the features!
+            </h1>
+        </div>
+        <!-- This is where the code for the buttons/links -->
+         <a href="">
+         <a href="">
+         <a href="">
+    </body>
 </html>
