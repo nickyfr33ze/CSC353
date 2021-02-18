@@ -4,6 +4,7 @@
 
 <html style="background-color: darkolivegreen">
     <body>
+        <center>
         <div class="text-3xl text-black font-mono">
             Welcome to Nick's web page
             <br>
@@ -11,6 +12,7 @@
                 Please click one of the following links to explore the features!
             </h1>
         </div>
+        </center>
         <!-- This is where the code for the buttons/links -->
          <a href="">
          <a href="">
