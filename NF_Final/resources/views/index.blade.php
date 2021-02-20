@@ -13,13 +13,14 @@
                 Please click one of the following links to explore the features!
             </h1>
             <div>
+                !-- This is where the code for the buttons/links -->
                 <a href="/documents">
                 <a href="/images">
                 <a href="/misc">
             </div>
         </div>
         </center>
-        <!-- This is where the code for the buttons/links -->
+        <
          
     </body>
 </html>
