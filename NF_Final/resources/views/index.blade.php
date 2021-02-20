@@ -13,14 +13,20 @@
                 Please click one of the following links to explore the features!
             </h1>
             <div>
-                !-- This is where the code for the buttons/links -->
-                <a href="/documents">
-                <a href="/images">
-                <a href="/misc">
+                <!-- This is where the code for the buttons/links -->
+                <a href="documents.blade.php">
+                    <h1>Click here for
+                        <button class="underline text-blue-600">Documents</button>
+                    </h1>
+                <a href="media.blade.php">
+                    <h1>Click here for
+                        <button class="underline text-blue-600">Media</button>
+                    </h1>
+                <a href="misc.blade.php">
+                    <h1>Click here for
+                        <button class="underline text-blue-600">Misc.</button>
+                    </h1>
             </div>
         </div>
-        </center>
-        <
-         
-    </body>
+        </body>
 </html>
