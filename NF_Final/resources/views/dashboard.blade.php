@@ -11,6 +11,30 @@
                 <div class="p-6 bg-white border-b border-gray-200">
                     You're logged in!
                 </div>
+                <div class="p-4 bg-white border-b border-gray-200">
+                    What would you like to access?
+                    <div class="p-3 bg-white border-b border-gray-200 divide-y divide-gray-400">
+                        <a href="documents.blade.php" id=documentsPage>
+                            <button onclick="">
+                                Documents
+                            </button>
+                        </a>
+                    </div>
+                    <div class="p-3 bg-white border-b border-gray-200 divide-y divide-gray-400">
+                        <a href="media.documents.php" id="mediaPage">
+                            <button onclick="">
+                                Media
+                            </button>
+                        </a>
+                    </div>
+                    <div class="p-3 bg-white border-b border-gray-200 divide-y divide-gray-400">
+                        <a href="/documents.blade.php" id=documentsPage>
+                            <button onclick=>
+                                Misc.
+                            </button>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
