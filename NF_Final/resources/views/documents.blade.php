@@ -4,6 +4,9 @@
 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
 <html>
+    <title>
+        Documents Page
+    </title>
     <body>
         <p>
             This is a test of the documents webpage
