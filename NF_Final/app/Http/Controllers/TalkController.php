@@ -14,7 +14,7 @@ class TalkController extends Controller
      */
     public function index()
     {
-        //
+        return('welcome');
     }
 
     /**
