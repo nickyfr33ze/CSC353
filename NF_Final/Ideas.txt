@@ -1,0 +1,4 @@
+Maybe rethink your design.
+
+Use the documents, media, and misc as types so that you only need to use one controller 'uploadcontroller'.
+Pass in the type of file uploaded as types documents, media, and misc rather than relying only on the url
