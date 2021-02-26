@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UploadController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,9 +18,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/documents');
-Route::get('/media');
-Route::get('misc');
+Route::get('/documents', UploadController::class);
+Route::get('/media', UploadController::class);
+Route::get('misc', UploadContoller::class);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
