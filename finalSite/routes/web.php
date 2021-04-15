@@ -16,4 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index'); // this makes the first screen you made in 'resources/views/index.blade.php'
 });
-Route::resource('/mymodel', UploadController::class);
+Route::resource('/upload', UploadController::class);
+Route::resource('/donwload', DownloadController::class);
