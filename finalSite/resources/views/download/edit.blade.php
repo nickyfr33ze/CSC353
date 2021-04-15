@@ -1,4 +1,4 @@
-<form method="post" action="/talk/{{ $download->id }}">
+<form method="post" action="/download/{{ $download->id }}">
     @csrf
     @method('patch')
 

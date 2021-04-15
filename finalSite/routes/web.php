@@ -17,4 +17,4 @@ Route::get('/', function () {
     return view('index'); // this makes the first screen you made in 'resources/views/index.blade.php'
 });
 Route::resource('/upload', UploadController::class);
-Route::resource('/donwload', DownloadController::class);
+Route::resource('/download', DownloadController::class);

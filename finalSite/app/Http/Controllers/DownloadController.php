@@ -15,7 +15,7 @@ class DownloadController extends Controller
      */
     public function index()
     {
-        $talks = Download::all();
+        $downloads = Download::all();
         return view('download.index', compact('downloads'));
     }
 
